@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<meta name="viewport" content="width=device-width , initial-scale=1">
+
+
+ </head>
+
+<body>
+<style>
+.container1{
+height:100px;
+width:300px;
+margin:15px 0;
+transition: all 1s ease;
+border:1px solid black;
+}
+.container1:hover
+{
+height:133px;
+width:400px
+margin:-50px;
+border:1px solid black;
+
+}
+.container2 {
+width:300px;
+margin:0 auto;
+min-height:600px;
+}
+
+.anim1{
+background-color:yellow;
+}
+.anim1:hover
+{
+animation:burn 3s infinite;
+}
+@keyframes burn
+{
+0%{
+								filter(blur(27px));
+							}
+							10%{
+								filter(blur(37px));
+							}
+							20%{
+								filter(blur(42px));
+							}
+							30%{
+								filter(blur(28px));
+							}
+							40%{
+								filter(blur(18px));
+							}
+							50%{
+								filter(blur(25px));
+							}
+							60%{
+								filter(blur(29px));
+							}
+							70%{
+								filter(blur(32px));
+							}
+							80%{
+								filter(blur(30px));
+							}
+							90%{
+								filter(blur(35px));
+							}
+							100%{
+								filter(blur(27px));
+							}
+}
+</style>
+<script >
+var vid1=document.getElementById("video1");
+function playVid()
+{
+alert("Hello");
+vid1.play();
+}
+function pausevid()
+{
+vid1.pause();
+}
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+</script>
+
+<p class="anim1">Animated text</p>
+<div class="container2">
+<div class="container1">
+Image1
+</div>
+
+<div class="container1">
+Image2
+</div>
+
+<div class="container1">
+Image3
+</div>
+
+</div>
+
+<video id="video1" width="320" height="176" >
+<source src="videos/mov_bbb.mp4" type="video/mp4">
+<source src="videos/mov_bbb.ogg" type="video/ogg">
+YOur browser does't support html5 video
+</video>
+<button type="button" class="btn btn-danger" onclick="playPause()" >play</button>
+<button type="button" class="btn btn-danger" onclick="playvid()" ><i class=" fa fa-play" aria-hidden="true" ></i></button>
+	<button type="button" class="btn btn-warning" onclick="pausevid()"><i class="fa fa-pause" aria-hidden="true" ></i></button>
+<button type="button" class="btn btn-dark" onclick="stopvid()"><i class="fa fa-stop" aria-hidden="true" ></i></button>
+</body>
+</html>
