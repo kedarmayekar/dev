@@ -1,0 +1,118 @@
+	#tag1:hover .dropdown-menu1{
+	diplay:block;
+	}
+	.m-show{
+	display:none;}
+	@media screen and (max-width : 800px)
+	{
+	.nm-show{display:none;}
+	.m-show{display:block;}
+	.newLogo{
+ height:50px;
+ width:50px;
+ }
+
+	}
+
+	@media screen and (max-width:1060px)
+	{
+	.tm-show{display:none;}
+	.m-show{display:block;}
+		
+	}
+	html { font-size:100%; }
+	@media (min-width: 640px) { 
+	body {font-size:1rem;} } 
+    @media (min-width:960px) { 
+    body {font-size:1.2rem;} } 
+    @media (min-width:1100px) {
+	body {font-size:1.5rem;} } 
+	
+	#gradFooter {
+  height: inherit;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, #778899, #ff0000);
+}
+
+@media screen and (min-width:850px)
+{
+.footerLink{
+	transition:transform .2s;
+	transition:background-color .2s;
+}
+
+/* .footerEffect.div{ transition: all .2s ease-in-out; } */
+.footerLink:hover { 
+transform:scale(1.2);
+background-color:black;
+}
+}
+
+@media screen and (max-width:849px)
+{
+	.footerLink{
+	transition:background-color .2s;
+}
+
+/* .footerEffect.div{ transition: all .2s ease-in-out; } */
+.footerLink:hover { 
+background-color:black;
+}
+	
+}
+
+	#tag1:hover .dropdown-menu1{
+	diplay:block;
+	}
+	.m-show{
+	display:none;}
+	@media screen and (max-width : 800px)
+	{
+	.nm-show{display:none;}
+	.m-show{display:block;}
+	}
+	
+	#content-title,.take-up : focus{
+animation:ease-up-animation1 3s ease-in;
+}
+@keyframes ease-up-animation1{
+from{ transform:translate3d(0,100%,0);
+}
+to { transform: translate3d(0,0,0);
+}
+}
+
+
+
+.take-up-content{
+animation:ease-up-animation 1s ease-in;
+
+}
+
+@keyframes ease-up-animation{
+from{ transform:translate3d(0,100%,0);
+}
+to { transform: translate3d(0,0,0);
+}
+}
+
+.pagetitle{
+animation :textleftin 1s ;
+}
+@keyframes textleftin{
+from{
+transform:translate3d(-100%,0,0);
+}
+to 
+{transform:translate3d(0,0,0);}
+}
+
+#art3,.artopacity:hover {
+opacity:0.6;
+}
+
+
+
+/* .footerEffect.div: hover .footerEffect.div{ */
+/* transform:scale(1.2);	 */
+/* } */
